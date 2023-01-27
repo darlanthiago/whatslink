@@ -37,7 +37,7 @@ function App() {
     e.preventDefault();
 
     const phoneCode = countries.find((c) => c.iso3 === code)?.fone;
-    
+
     const fullNumber = `${phoneCode}${phone}`;
 
     const url = getWhatsappUrl(removeSpecialCharacters(fullNumber));
